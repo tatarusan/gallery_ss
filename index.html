@@ -1,4 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>FFXIV SS</title>
+</head>
 
-<div style="text-align:center;">
-init site
-</div>
+<style>
+    .light-gallery{
+        text-align: center !important;
+        transition: all 0.2s;
+    }
+
+    .v-gallery .light-gallery a:hover {
+        border: 1px solid #aaa !important;
+        box-shadow: 0 1px 8px rgb(0 0 0 / 50%) !important;
+        transform: scale(1.02);
+    }
+
+    .v-gallery .light-gallery a {
+        padding: 0px !important;
+        border-radius: 6px !important;
+    }
+
+    .v-gallery .light-gallery a .image-container {
+        width: 160px !important;
+        border-radius: 6px !important;
+    }
+    .v-gallery .light-gallery a .image-container img {
+        width: 100% !important;
+    }
+</style>
+
+<body>
+
+    <div id="app">
+
+        <div class="py-8">
+            <div class=" text-center text-3xl font-bold mt-2">
+                FFXIV SS
+            </div>
+            <div class="text-center text-sm text-gray-400 mt-2">
+                2022-11-18
+            </div>
+        </div>
+
+        <v-gallery :images="list"></v-gallery>
+
+        <div class="mt-8">
+            <div class="text-center text-base text-gray-400">
+                &copy; 2022 taru, Inc. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/v-gallery@1.2.4/dist/v-gallery.js"></script>
+    <script>
+
+        const vGallery = window.vGallery.default;
+
+        Vue.use(vGallery);
+        
+        new Vue({
+            el: '#app',
+            data: {
+                list: [
+                    {title:'SS',url:'ss/1.jpg'},
+                    {title:'SS',url:'ss/2.jpg'},
+                    {title:'SS',url:'ss/3.jpg'},
+                    {title:'SS',url:'ss/4.jpg'},
+                    {title:'SS',url:'ss/5.jpg'},
+                    {title:'SS',url:'ss/6.jpg'},
+                    {title:'SS',url:'ss/7.jpg'},
+                    {title:'SS',url:'ss/8.jpg'},
+                    {title:'SS',url:'ss/9.jpg'},
+                    {title:'SS',url:'ss/10.jpg'},
+                    {title:'SS',url:'ss/11.jpg'},
+                    {title:'SS',url:'ss/12.jpg'},
+                    {title:'SS',url:'ss/13.jpg'},
+                    {title:'SS',url:'ss/14.jpg'},
+                    {title:'SS',url:'ss/15.jpg'},
+                    {title:'SS',url:'ss/16.jpg'},
+                    {title:'SS',url:'ss/17.jpg'},
+                    {title:'SS',url:'ss/18.jpg'},
+                    {title:'SS',url:'ss/19.jpg'},
+                    {title:'SS',url:'ss/20.jpg'},
+                    {title:'SS',url:'ss/21.jpg'},
+                    {title:'SS',url:'ss/22.jpg'},
+                    {title:'SS',url:'ss/23.jpg'},
+                    {title:'SS',url:'ss/24.jpg'},
+                    {title:'SS',url:'ss/25.jpg'},
+                    {title:'SS',url:'ss/26.jpg'},
+                    {title:'SS',url:'ss/27.jpg'},
+                ]
+            }
+        });
+
+    </script>
+</body>
+</html>
